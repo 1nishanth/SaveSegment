@@ -1,0 +1,213 @@
+
+body
+{
+    position:relative;
+}
+
+.toolbar
+{
+    height:60px;
+    background-color:#00A09E;
+    padding:20px;
+    color:white;
+}
+
+.saveSegmentPopup
+{
+    /* position:relative; */
+    top:50px;
+    left:100px;
+    padding:60px 90px;
+}
+/* outside save btn */
+.save-segmentBtn
+{
+    position:absolute;
+    padding:15px;
+    border:3px solid white;
+    color:white;
+    cursor:pointer;
+    background:grey;
+    /* padding:60px 80px; */
+    /* border:2px solid white;
+    height:4px;
+    width:2px; */
+
+}
+  /* Popup code starts */
+
+.popup-overlay 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 90% opacity */
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.popup-content 
+{
+    background-color: white;
+    width: 30%; /* Half of the screen */
+    height: 100%;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: slide-in 0.3s forwards;
+}
+
+.popup-header-content 
+{
+    padding:20px;
+}
+
+/* h3 .popupheading
+{
+    font-size:18px;
+    margin-bottom:30px;
+} */
+
+.popup-toolbar 
+{
+    background-color: #00A09E;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    width:100%;
+    height:80px;
+    color:white;
+}
+
+.popup-toolbar .popupheading{
+ padding-top:12px;
+ font-size:16px;
+}
+
+.popup-toolbar .popupheading .backbtn
+{
+  float:left;
+  font-size:16px;
+  background:transparent;
+  border:none;
+  color:white;
+}
+/* popup content data styles */
+.popup-body h2
+{
+    font-size:16px;
+}
+
+.popup-body input
+{
+    width:97%;
+    padding:8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+/* 2 icons for users and group */
+.traits-container
+{
+    margin-bottom:15px;
+    float:right;
+}
+.user-traits-dot
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+}
+.group-traits-dot
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.blue-box {
+    border: 2px solid blue;
+    padding:10px;
+    min-height:50px;
+    margin-bottom:10px;
+  }
+
+.schema-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.schema-item select {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+.remove-schema-btn {
+    background-color: lightblue;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .full-width-dropdown {
+    width: 88%;
+    padding: 6px;
+    display:flex;
+    margin-bottom: 5px;
+    margin-left:12px;
+  }
+
+  .add-schema-link 
+  {
+    display: inline-block;
+    margin-top: 5px;
+    color: #00A09E;
+    cursor: pointer;
+  }
+
+  /* .footer-data-content
+  {
+
+  } */
+  .modal-footer 
+  {
+    position: fixed;
+    bottom: 0;
+    background-color: lightgrey;
+    padding: 20px;
+    height:78px;
+    width:100%;
+  }
+
+  .save-btn {
+    background-color: green;
+    color: white;
+    margin-top:20px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    color: red;
+    padding: 8px 16px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* .hiddenspace
+  {
+    width:50%;
+    height:199px;
+  } */
